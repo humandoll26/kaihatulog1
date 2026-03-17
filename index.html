@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ダウンロードページ | 未完製作所</title>
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --text: #111111;
+      --sub: #555555;
+      --line: #d8d2c8;
+      --accent: #f4d000;
+      --accent-dark: #d8b800;
+      --card: #ffffff;
+      --navy: #14213d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .label {
+      display: inline-block;
+      border: 2px solid var(--navy);
+      padding: 8px 14px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      background: #fff;
+      margin-bottom: 28px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      margin: 0 0 24px;
+      color: var(--sub);
+      font-size: 1rem;
+    }
+
+    .notice {
+      background: #fff8cc;
+      border-left: 6px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 24px 0;
+      font-size: 0.96rem;
+    }
+
+    .download-box {
+      margin-top: 28px;
+      padding: 24px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+      border: 1px solid var(--line);
+    }
+
+    .download-title {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .download-text {
+      margin: 0 0 20px;
+      color: var(--sub);
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: #111;
+      font-weight: 800;
+      padding: 16px 26px;
+      border-radius: 999px;
+      border: 2px solid #111;
+      box-shadow: 0 6px 0 #111;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(2px);
+      box-shadow: 0 4px 0 #111;
+    }
+
+    .btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #111;
+    }
+
+    .meta {
+      margin-top: 14px;
+      font-size: 0.92rem;
+      color: var(--sub);
+    }
+
+    .section {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: var(--sub);
+      text-align: center;
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--sub);
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 24px 14px 48px;
+      }
+
+      .hero,
+      .section,
+      .download-box {
+        padding: 20px 16px;
+      }
+
+      .btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="label">未完製作所 ダウンロードページ</div>
+
+    <div class="hero">
+      <h1>ありがとうございます。</h1>
+      <p class="lead">
+        ご購入ありがとうございます。<br>
+        こちらのページからPDFをダウンロードできます。
+      </p>
+
+      <div class="notice">
+        このページのURLは購入者向けです。SNSや公開ページへの再掲載はご遠慮ください。
+      </div>
+
+      <div class="download-box">
+        <p class="download-title">未完製作所 開発ログ Vol.1</p>
+        <p class="download-text">
+          VSCode × Codex CLIでツールを作り、GitHubで公開するまで
+        </p>
+
+        <!-- ↓ PDFファイル名を自分のものに変える -->
+        <a class="btn" href="./mikan_log_1.pdf" download>
+          PDFをダウンロードする
+        </a>
+
+        <p class="meta">
+          うまくダウンロードできない場合は、ボタンを右クリックして
+          「リンク先を保存」をお試しください。
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>このPDFについて</h2>
+      <ul>
+        <li>AIと一緒に、小さなツールを作って公開するまでの実践ログです。</li>
+        <li>コーディング初心者でも追いやすいように、考え方と手順を整理しています。</li>
+        <li>完璧を目指すのではなく、「まず出す」ための開発フローを扱っています。</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>ご利用について</h2>
+      <p class="small">
+        © 2026 未完製作所（Unfinished Works Lab） / 月邑弥生 All Rights Reserved.<br>
+        本PDFの無断転載・複製・再配布・販売は禁止しています。個人の学習および実践目的での利用は歓迎しますが、
+        内容の再配布や販売はご遠慮ください。
+      </p>
+    </div>
+
+    <div class="footer">
+      完璧を目指さず、先に出して育てる。
+    </div>
+  </div>
+</body>
+</html>
